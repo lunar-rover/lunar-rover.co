@@ -8,6 +8,10 @@
 ehthumbs.db
 Thumbs.db
 
+# node modules #
+######################
+node_modules
+
 # Config #
 ######################
 bin/config.js
