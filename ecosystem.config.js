@@ -6,8 +6,8 @@ module.exports = {
   deploy: {
     production: {
       user: 'ubuntu',
-      host: 'ec2-18-222-133-16.us-east-2.compute.amazonaws.com',
-      key: '~/.ssh/website.pem',
+      host: 'ubuntu@ec2-54-175-62-178.compute-1.amazonaws.com',
+      key: '~/.ssh/lunar-rover-co.pem',
       ref: 'origin/master',
       repo: 'git@github.com:johnwong668/lunar-rover.co.git',
       path: '/home/ubuntu/lunar-rover.co',
