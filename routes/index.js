@@ -22,19 +22,21 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/process-contact', function(req, res, next) {
-    if (req.param("name") && req.param("email") && req.param("message")) {
+    if (req.body.name && req.body.email && req.body.message) {
         smtpTransport.sendMail({
-            from: req.param("email"),
+            from: config.email.mailTo,
             to: config.email.mailTo,
-            subject: 'Contact Us by ' + req.param("name"),
-            text: req.param("message")
+            subject: 'Feedback from ' + req.body.name + ' ('+req.body.email+')',
+            text: req.body.message
         }, sendEmailCallback);
 
         // TODO: send response email to requester
 
         res.json({done: true});
     }
-    res.json({error: 'Failed to send your message. Please try again later.'});
+    else {
+        res.json({error: 'Failed to send your message. Please try again later.'});        
+    }
 });
 
 module.exports = router;
