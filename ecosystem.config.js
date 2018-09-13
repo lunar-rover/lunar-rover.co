@@ -9,7 +9,7 @@ module.exports = {
       host: 'ec2-54-159-190-1.compute-1.amazonaws.com',
       key: '~/.ssh/lunar-rover-co.pem',
       ref: 'origin/master',
-      repo: 'git@github.com:johnwong668/lunar-rover.co.git',
+      repo: 'git@lunar-rover.co.github.com:johnwong668/lunar-rover.co.git',
       path: '/home/ubuntu/lunar-rover.co',
       'post-deploy': 'npm install && pm2 startOrRestart ecosystem.config.js'
     }
