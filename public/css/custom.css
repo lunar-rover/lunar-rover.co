@@ -202,12 +202,12 @@ button background (dark):
 }
 
 #banner {
-    background-image: url(../images/banner-bk.jpg);
+    background-image: url(../img/banner-bk.jpg);
     background-position: center;
 }
 
 #contact {
-    background-image: url(../images/contact-bk.jpg);
+    background-image: url(../img/contact-bk.jpg);
     background-position: center;
 }
 

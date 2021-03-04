@@ -18,7 +18,12 @@ function sendEmailCallback(error, response) {
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    res.render('index', { title: 'Express' });
+    var d = new Date();
+    var year = d.getFullYear();
+    res.render('index-20210127', {
+        app_name: 'Lunar Rover',
+        current_year: year
+    });
 });
 
 router.post('/process-contact', function(req, res, next) {
@@ -35,7 +40,7 @@ router.post('/process-contact', function(req, res, next) {
         res.json({done: true});
     }
     else {
-        res.json({error: 'Failed to send your message. Please try again later.'});        
+        res.json({error: 'Failed to send your message. Please try again later.'});
     }
 });
 

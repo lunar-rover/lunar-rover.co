@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <% include common/head %>
+    </head>
+    <body>
+        <!--header-->
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.png" alt="<%= app_name %> logo" class="app-logo d-md-inline-block">
+                <!-- <img src="./img/AppLogo_placeholder.png" alt="<%= app_name %> logo" class="app-logo-placeholder d-none d-md-none"> -->
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mr-3" style="display: none;">
+                        <a class="nav-link page-scroll" href="#banner" id="navLinkBanner">Banner</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link page-scroll" href="#about">ABOUT <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link page-scroll" href="#projects">PROJECTS</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link page-scroll" href="#contact">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--main section-->
+        <section class="hero pt-5" id="banner">
+            <h2>Go beyound what's possible</h2>
+        </section>
+
+        <!--about-->
+        <section class="" id="about">
+            <div class="container-fluid">
+                <div class="row content-row">
+                    <div class="content-block">
+                        <img src="./img/Lunar_Rover.png" alt="Lunar Rover" class="content-icon">
+                        <div class="content-title">Lunar Rover</div>
+                        <div class="content-description">
+                            We are a tech company based in Hong Kong.
+                            We develop revolutionary app products to improve workflow and brings convenience to life.
+                            We provide Software as a service (SaaS), mobile app development (Android and iOS) and web solutions.
+                        </div>
+                        <a href="#projects" class="page-scroll"><button type="button" class="content-button">VIEW OUR PROJECTS</button></a>
+                    </div>
+                    <div class="content-block bg-about">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--projects-->
+        <section class="" id="projects">
+            <div class="container-fluid">
+                <div class="row bg-gray">
+                    <div class="projects-intro">
+                        <h1>Featured Projects</h1>
+                        <div>
+                            Since 2017, we have been involved in various projects and co-operations with other incorporations.
+                            Some products were launched under our own brand name.
+                        </div>
+                    </div>
+                </div>
+                <div class="row content-row">
+                    <div class="content-block bg-altitude-app">
+                        <img src="./img/Dispatch.png" alt="Altitude App">
+                    </div>
+                    <div class="content-block">
+                        <img src="./img/altitude-icon.jpg" alt="Altitude App" class="content-icon">
+                        <div class="content-title">Altitude App</div>
+                        <div class="content-description">
+                            <p>Altitude App is a mobile app solution that streamlines essential operational information gathering for airline crew.</p>
+                            <p>It is one-of-its-kind app that combines multiple functionalities into one and has become the industry standard tool for duty swapping, flight hour logging and information sharing between crew.</p>
+                        </div>
+                        <a href="https://www.altitude-app.com/" target="_blank"><button type="button" class="content-button">LEARN MORE</button></a>
+                    </div>
+                </div>
+                <div class="row content-row">
+                    <div class="content-block bg-hkcrewup show-mobile">
+                        <img src="./img/crewup-icon2.png" class="show-portrait" alt="Hong Kong CrewUp">
+                        <img src="./img/hkcrewup.png" alt="Hong Kong CrewUp">
+                    </div>
+                    <div class="content-block">
+                        <img src="./img/crewup-icon.png" alt="Hong Kong CrewUp" class="content-icon crewup-icon">
+                        <div class="content-title">Hong Kong CrewUp</div>
+                        <div class="content-description">
+                            <p>Hong Kong CrewUp is a community project initiative aimed at raising public awareness to the people in aviation sector who are affected by COVID-19.</p>
+                            <p>It provides a free platform for users to promote their side buinesses and also for companies to share employment information in an organised manner.</p>
+                        </div>
+                        <a href="https://hkcrewup.com/" target="_blank"><button type="button" class="content-button">LEARN MORE</button></a>
+                    </div>
+                    <div class="content-block bg-hkcrewup hide-mobile">
+                        <img src="./img/hkcrewup.png" alt="Hong Kong CrewUp">
+                    </div>
+                </div>
+                <div class="row bg-gray">
+                    <div class="sponsors">
+                        <h1>Funded & Supported By</h1>
+                        <div class="sponsor-container">
+                            <div class="sponsor">
+                                <img src="./img/cyberport-logo.jpg" alt="Cyberport">
+                                <div>Cyberport <br/>Incubation Program</div>
+                            </div>
+                            <div class="sponsor">
+                                <img src="./img/dendron-logo-space-v1-03.png" alt="HKU iDendron Incubation Program">
+                                <div>HKU iDendron <br/>Incubation Program</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--contact-->
+        <%#
+        <section class="bg-texture-collage" id="contact">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-md-6 text-white col-info text-center">
+                        <table class="h-100">
+                            <tr>
+                                <td class="align-middle">
+                                    <h2>Contact Us</h2>
+                                    <p class="lead mt-4">It is an ongoing project that needs your support and feedback to make it grow and benefits more members of the community.</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-md-6 text-white col-form">
+                        <form id="contact-form">
+                            <div class="row text-left">
+                                <div class="form-group col-md-6">
+                                    <label for="name">Your name</label>
+                                    <input type="name" class="form-control" name="name" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="Email">Your email</label>
+                                    <input type="email" class="form-control" name="email" required>
+                                </div>
+                            </div>
+                            <div class="form-group text-left">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" name="message" rows="3" maxlength="4000" required></textarea>
+                            </div>
+                            <button type="submit" class="btn atlas-cta atlas-cta-wide my-3">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Contact Modal -->
+            <div class="modal" tabindex="-1" role="dialog" id="contact-modal">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Feedback</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Your message has been sent. Thank you.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </section>
+        #%>
+
+        <!--footer-->
+        <section class="bg-black" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-xs-12 text-center wow fadeIn">
+                        <a href="mailto:info@lunar-rover.co">info@lunar-rover.co</a>
+                        <br>
+                        Copyright 2017-<%= current_year %>. All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <% include common/scripts %>
+    </body>
+</html>
