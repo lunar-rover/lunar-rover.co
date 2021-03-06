@@ -27,17 +27,19 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/process-contact', function(req, res, next) {
-    if (req.body.name && req.body.email && req.body.message) {
+    if (req.body.name && req.body.email && req.body.subject && req.body.message) {
         smtpTransport.sendMail({
             from: config.email.mailTo,
             to: config.email.mailTo,
-            subject: 'Feedback from ' + req.body.name + ' ('+req.body.email+')',
+            subject: req.body.subject,
             text: req.body.message
         }, sendEmailCallback);
 
         // TODO: send response email to requester
 
         res.json({done: true});
+
+        // res.json(req.body); // TEST
     }
     else {
         res.json({error: 'Failed to send your message. Please try again later.'});

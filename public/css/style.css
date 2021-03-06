@@ -1250,9 +1250,33 @@ section {
 
 #contact {
   padding: 50px 0;
+}
+#contact h1 {
+  color: black;
+  font-size: 36px !important;
+  font-weight: 200 !important;
+}
+#contact input, #contact textarea {
+  margin-bottom: 10px;
+  font-weight: 200 !important;
+}
+#contact textarea {
+  resize: none;
+}
+#contact .btn {
+  border: 2px solid #4d4d4d;
+  font-size: 14px;
+  font-weight: 200 !important;
+}
+#contact .btn i {
+  margin-right: 5px;
+}
+
+#footer {
+  padding: 50px 0;
   color: #939393;
 }
-#contact a {
+#footer a {
   color: #939393;
 }
 

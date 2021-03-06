@@ -1273,6 +1273,32 @@ section {
 
 #contact {
     padding: 50px 0;
+
+    h1 {
+        color: black;
+        font-size: 36px !important;
+        font-weight: 200 !important;
+    }
+    input, textarea {
+        margin-bottom: 10px;
+        font-weight: 200 !important;
+    }
+    textarea {
+        resize: none;
+    }
+    .btn {
+        border: 2px solid #4d4d4d;
+        font-size: 14px;
+        font-weight: 200 !important;
+
+        i {
+            margin-right: 5px;
+        }
+    }
+}
+
+#footer {
+    padding: 50px 0;
     color: #939393;
     a {
         color: #939393;
@@ -1346,6 +1372,5 @@ section {
     }
 
 }
-
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
